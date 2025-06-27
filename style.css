@@ -485,10 +485,20 @@ section {
     #home .home-text p {
         font-size: 1rem;
     }
-    #home .home-image img,
-    #about .about-avatar img,
-    #about .know-me-image img,
-    .experience-image img {
+    #home .home-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 80vh;
+    }
+    #home .home-text {
+        margin-bottom: 0;
+    }
+    #home .home-image {
+        margin-top: 0.5rem;
+    }
+    #home .home-image img {
+        margin-top: 0;
         max-width: 180px;
     }
     #about .skills-grid {
@@ -503,6 +513,12 @@ section {
     .btn {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
+    }
+    #home {
+        padding-bottom: 2rem;
+    }
+    #about .about-section-container {
+        padding-top: 0;
     }
 }
 
