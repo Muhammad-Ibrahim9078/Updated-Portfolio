@@ -30,8 +30,20 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.7rem;
+    font-weight: normal;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+}
+
+.logo-sub {
+    display: block;
+    font-size: 0.6em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+    color: #c770f0;
+    letter-spacing: 2px;
+    margin-top: -0.3em;
 }
 
 nav ul {
@@ -83,6 +95,12 @@ nav ul li a i {
     margin-right: 0.4em;
     vertical-align: middle;
     display: inline-block;
+}
+
+/* Specific styling for LinkedIn icon */
+nav ul li a i.ri-linkedin-box-fill {
+    color: #0077b5;
+    font-size: 1.3em;
 }
 
 section {
@@ -411,6 +429,8 @@ section {
         box-shadow: 0 8px 24px rgba(0,0,0,0.2);
         padding: 1rem 0;
         z-index: 999;
+        align-items: center;
+        justify-content: center;
     }
     nav ul.show {
         display: flex;
@@ -418,9 +438,18 @@ section {
     nav ul li {
         text-align: center;
         margin: 0.5rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     nav {
         position: relative;
+    }
+    #nav-toggle {
+        display: block;
+    }
+    #about .about-avatar img {
+        max-width: 210px;
     }
 }
 
@@ -520,6 +549,9 @@ section {
     #about .about-section-container {
         padding-top: 0;
     }
+    #about .about-avatar img {
+        max-width: 150px;
+    }
 }
 
 #particles-js {
@@ -582,6 +614,8 @@ header, main, section, .home-container {
         box-shadow: 0 8px 24px rgba(0,0,0,0.2);
         padding: 1rem 0;
         z-index: 999;
+        align-items: center;
+        justify-content: center;
     }
     nav ul.show {
         display: flex;
@@ -589,6 +623,9 @@ header, main, section, .home-container {
     nav ul li {
         text-align: center;
         margin: 0.5rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     nav {
         position: relative;
