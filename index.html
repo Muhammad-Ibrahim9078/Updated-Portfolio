@@ -12,6 +12,9 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
+
+    <!-- nav bars -->
+
     <div id="particles-js"></div>
     <header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 100;">
     <nav>
@@ -28,18 +31,25 @@
     </nav>
 </header>
 
+
     <section id="home">
         <div class="home-container">
             <div class="home-text">
                 <h1>Hi There! <span class="wave">👋</span></h1>
                 <h2>I'M <span class="name">MUHAMMAD IBRAHIM</span></h2>
-                <p>Full Stack Web & App Developer</p>
+                    <span id="element">Full-Stack Web & App Developer</span>
+            <br><br>
+                    <span id="secondLine">Full-Stack Web & App Developer</span>
+
             </div>
+
             <div class="home-image">
                 <img src="images/img coder.png" alt="Developer Illustration">
             </div>
         </div>
     </section>
+
+    <!-- About -->
 
     <section id="about">
         <div class="about-section-container">
@@ -75,6 +85,8 @@
                 </div>
             </div>
 
+            <!-- Know me who i am -->
+
             <div class="know-me-container">
                 <div class="know-me-text">
                     <h2 class="section-title">Know Who <span class="purple">I'M</span></h2>
@@ -83,6 +95,9 @@
                         <br>
                         I am a Full Stack Web & App Developer.
                     </p>
+
+                    <!-- My Favorite Hobbies -->
+
                     <p>
                         Apart from coding, some other activities that I love to do!
                     </p>
@@ -97,8 +112,11 @@
                 </div>
             </div>
 
+
+            
+
             <div class="skillset-container">
-                <h2 class="section-title">Professional <span class="purple">Skillset</span></h2>
+                <h2 class="section-title">The technologies<span class="purple"> I use</span></h2>
                 <div class="skills-grid">
                     <div class="skill-card"><i class="devicon-html5-plain colored"></i><span class="skill-label">HTML5</span></div>
                     <div class="skill-card"><i class="devicon-css3-plain colored"></i><span class="skill-label">CSS3</span></div>
@@ -119,9 +137,12 @@
         </div>
     </section>
 
+
+    <!-- Projects -->
+
     <section id="projects">
         <div class="projects-container">
-            <h2 class="section-title">My <span class="purple">Practice Work</span></h2>
+            <h2 class="section-title">My <span class="purple">Some Projects</span></h2>
             <p style="text-align: center; margin-bottom: 3rem;">Here are a few projects I've worked on recently.</p>
             <div class="projects-grid">
                 <!-- Project 1: IBOnlineStore -->
@@ -129,7 +150,7 @@
                     <img src="https://i.ytimg.com/vi/Wda07Ib3r1k/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDkPjfqqed7IeQ9l3gkh4YacElB_g" alt="Weather App">
                     <div class="project-info">
                         <h3>☁️ Weather App</h3>
-                        <p>Ek simple weather app jo current weather dikhata hai. Built with HTML, CSS, aur JavaScript. Live demo available hai.</p>
+                        <p>A clean and responsive weather app that shows the current weather using real-time data. Just type the name of any city, and it will instantly display the temperature, weather condition, and humidity. Live demo available.</p>
                         <div class="project-links">
                             <a href="https://github.com/Muhammad-Ibrahim9078/Weather-App" target="_blank" class="btn">GitHub</a>
                             <a href="https://ib-weatherapp.netlify.app/" target="_blank" class="btn">Demo</a>
@@ -174,9 +195,9 @@
                 </div>
                 <!-- Project 5 -->
                 <div class="project-card">
-                    <img src="images/quiz app.png" alt="Todo List">
+                    <img src="images/quiz app.png" alt="quiz app">
                     <div class="project-info">
-                        <h3>🧠 MCQ Quiz Appt</h3>
+                        <h3>🧠 Quiz App</h3>
                         <p>Interactive quiz app using HTML, CSS & JavaScript – shows one question at a time and final score after completion.</p>
                         <div class="project-links">
                             <a href="https://github.com/Muhammad-Ibrahim9078/Quiz-App" target="_blank" class="btn">GitHub</a>
@@ -186,13 +207,25 @@
                 </div>
                 <!-- Project 6 -->
                 <div class="project-card">
-                    <img src="images/api img.png" alt="Todo List">
+                    <img src="images/api img.png" alt="API-Based E-Commerce App">
                     <div class="project-info">
                         <h3>🛒 API-Based E-Commerce App</h3>
                         <p>Interactive quiz app using HTML, CSS & JavaScript – shows one question at a time and final score after completion.</p>
                         <div class="project-links">
                             <a href="https://github.com/Muhammad-Ibrahim9078/API-Use-Create-E-Commerce" target="_blank" class="btn">GitHub</a>
-                            <a href="https://ib-quizapp.netlify.app/" target="_blank" class="btn">Demo</a>
+                            <a href="https://api-based-e-commerce.netlify.app/" target="_blank" class="btn">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <img src="images/news img.png" alt="news app">
+                    <div class="project-info">
+                        <h3>📰 News App</h3>
+                        <p>This app fetches and displays the latest news articles in real-time using News API. It features a responsive card-based layout with headlines, images, and short descriptions.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Muhammad-Ibrahim9078/News-App" target="_blank" class="btn">GitHub</a>
+                            <a href="https://ib-newsapp.netlify.app/" target="_blank" class="btn">Demo</a>
                         </div>
                     </div>
                 </div>
@@ -246,5 +279,23 @@
         }
       });
     </script>
+
+
+
+<!-- auto type text in top on web -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Web and App Developer'],
+            typeSpeed: 70,
+        });
+        var typed = new Typed('#secondLine', {
+            strings: ['<span class="name">Expertise in</span> Front End Development'],
+            typeSpeed: 70,
+        });
+    </script>
+
 </body>
 </html> 
